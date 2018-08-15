@@ -2,12 +2,8 @@
   function renderTweets(tweets) {
       for(id in tweets) {
           let $tweet = createTweetElement(tweets[id]);
-          $('.tweet-container').append($tweet);
-      }
-    //   return $tweet;
-    // loops through tweets
-      // calls createTweetElement for each tweet
-      // takes return value and appends it to the tweets container
+          $('.tweet-container').prepend($tweet);
+        }
     }
 function createTweetElement(tweet) {
     let $tweet = $('<article>').addClass(tweet);
@@ -45,16 +41,27 @@ $(document).ready(function() {
     // console.log(charCount);
     var error = validate(charCount);
     if (!error) {
-
-    }
-    ( $ (this).serialize());
-  }); 
-  $(function loadTweets(){
-        $.ajax('http://localhost:8080/tweets', {method: 'GET'})
-        .then(function (tweets) {
-          renderTweets(tweets);
-        });
+      $.ajax({
+        type: 'post',
+        url: '/tweets',
+        data: $(this).serialize(),
+      }).then(function(){
+        loadTweets(1);
       });
+    };
+  }); 
+ 
+  function loadTweets(size){
+    $.ajax('http://localhost:8080/tweets', {method: 'GET'})
+    .then(function (tweets) {
+      if (size) {
+        renderTweets(tweets.slice(tweets.length-1));
+      } else {
+        renderTweets(tweets);
+      }
     });
-
-    
+  };
+  loadTweets();
+});
+ 
+// $ specify post type, give url to check /tweets send the this Data. search .done() + .fail()
