@@ -16,12 +16,18 @@ function createTweetElement(tweet) {
     $tweetHeader.append($tweetImg);
     
     let $tweetBody = $('<section>').html(tweet.content.text);
-    let $tweetFooter = $('<footer>').html(tweet.created_at);
+    let $tweetTime = moment(tweet.created_at).fromNow();
+    let $tweetFooter = $('<footer>').html($tweetTime);
     
     $tweet.append($tweetHeader);
     $tweet.append($tweetBody);
     $tweet.append($tweetFooter);
     return $tweet;
+
+    
+      
+      
+ 
 }
 $(document).ready(function() {
   $('.errors').hide();
@@ -69,5 +75,3 @@ $(document).ready(function() {
   };
   loadTweets();
 });
- 
-// $ specify post type, give url to check /tweets send the this Data. search .done() + .fail()
