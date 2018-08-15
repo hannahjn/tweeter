@@ -24,14 +24,20 @@ function createTweetElement(tweet) {
     return $tweet;
 }
 $(document).ready(function() {
+  $('.errors').hide();
   function validate(charCount){
     var error = '';
-    if(charCount > 140 ) {
+    if(charCount > 5 ) {
       alert('Too many characters!');
       error = true;
     } else if(charCount === 0) {
-      alert('Please enter a message');
-      error = true;
+        // alert('Please enter a message');
+        error = true;
+    }
+    if (error) {
+      $('.errors').slideDown();
+    } else {
+      $('.errors').slideUp();
     }
     return error;
   }

@@ -22,4 +22,16 @@
      line-height: 80px;
      font-size: 2em;
    }
+#nav-bar input {
+  float: right;
+  margin-top: 15px;
+  padding: 15px;
+  border: 1px solid purple;
+  border-radius: 10px;
+  background-color: #eee;
+}
+
+#nav-bar input:hover {
+  color: hotpink;
+  border-color: hotpink;
 }
