@@ -28,7 +28,7 @@ $(document).ready(function() {
   function validate(charCount){
     var error = '';
     if(charCount > 5 ) {
-      alert('Too many characters!');
+      // alert('Too many characters!');
       error = true;
     } else if(charCount === 0) {
         // alert('Please enter a message');
