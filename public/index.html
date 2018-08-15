@@ -39,9 +39,10 @@
         <section class="new-tweet">
             <h2>Compose Tweet</h2>
             <form method="POST" action="/tweets/">
-              
+         
               <textarea name="text" placeholder="What are you humming about?"></textarea>
               <input type="submit" value="Tweet">
+
               <span class="counter">140</span>
             </form>
           </section>
@@ -63,3 +64,16 @@
 
   </body>
 </html>
+
+<!-- 
+take class of form.
+$('.class name). on('submit', function(event) {
+
+})
+
+$('.new-tweet').on('submit', function(event) {
+  event.preventDefault();
+
+})
+event.target
+  will return an html element -->
