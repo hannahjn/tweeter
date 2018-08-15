@@ -2,8 +2,10 @@
 #nav-bar {
     position: top;
     height: 80px;
-    background: #00a087;
-    color: #e8fdff;
+    /* background: #00a087; */
+    background: purple;
+    /* color: #e8fdff; */
+    color: #eee;
     padding-left: 2em;
     padding-right: 2em;
     padding-top: 0px;

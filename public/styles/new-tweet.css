@@ -1,0 +1,97 @@
+
+textarea {
+    display: block;
+    margin: auto;
+    width: 430px;
+    border-color: purple;
+}
+.new-tweet h2 {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid purple;
+}
+.counter {
+    float: right;
+    margin-top: 13px;
+    margin-right: 10px;
+}
+.new-tweet {
+    width: 450px;
+    border: 1px solid purple;
+    border-radius: 15px;
+    margin: auto;
+    background-color: #eee;
+    
+}
+.new-tweet input {
+    margin: 10px;
+    color: purple;
+}
+
+.background {
+    padding-top: 25px;
+    background-color: white;
+}
+article{
+    background-color: white;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    height: 165px;
+    border: 1px solid purple;
+    border-radius: 15px;
+}
+article:hover{
+    color: hotpink;
+    border-color: hotpink;
+}
+                    
+.tweet-container header {
+    overflow: auto;
+    background-color: #eee;
+    background-size: auto;
+    display: block;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    
+}
+
+.tweet-container h2 {
+    /* padding-left: 50px; */
+    padding-right: 10px;
+    /* padding-top: 20px; */
+    padding-bottom: 10px;
+    display: inline;
+    
+}
+p {
+    float: right;
+    display: inline;
+    padding-right: 10px;
+}
+
+.tweet-container section {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 80px;
+    display: block;
+    border-bottom: 1px solid purple;
+    padding-top: 29px;
+}
+
+.tweet-container footer {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    
+}
+
+.tweet-container img {
+    padding-left: 20px;
+    float: left;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
