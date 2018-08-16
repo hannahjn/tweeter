@@ -17,23 +17,27 @@ function createTweetElement(tweet) {
     
     let $tweetBody = $('<section>').html(tweet.content.text);
     let $tweetTime = moment(tweet.created_at).fromNow();
+    let $footerFlag = $('<i>').addClass('far fa-flag');
+    let $footerLike = $('<i>').addClass('far fa-thumbs-up');
+    let $footerRetweet = $('<i>').addClass('fas fa-retweet');
     let $tweetFooter = $('<footer>').html($tweetTime);
     
+    $tweetFooter.append($footerFlag);
+    $tweetFooter.append($footerLike);
+    $tweetFooter.append($footerRetweet);
+
     $tweet.append($tweetHeader);
     $tweet.append($tweetBody);
     $tweet.append($tweetFooter);
+  
     return $tweet;
-
-    
-      
-      
- 
 }
+
 $(document).ready(function() {
   $('.errors').hide();
   function validate(charCount){
     var error = '';
-    if(charCount > 5 ) {
+    if(charCount > 140 ) {
       // alert('Too many characters!');
       error = true;
     } else if(charCount === 0) {

@@ -1,8 +1,10 @@
 
 #nav-bar {
-    position: top;
+    position: fixed;
+    display: block;
     height: 80px;
     /* background: #00a087; */
+    width: 100%;
     background: purple;
     /* color: #e8fdff; */
     color: #eee;

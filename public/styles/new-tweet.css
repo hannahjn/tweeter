@@ -1,3 +1,6 @@
+body .container {
+    height: 1400px;
+}
 
 textarea {
     display: block;
@@ -24,6 +27,7 @@ textarea {
     margin: auto;
     background-color: #eee;
     
+    
 }
 .new-tweet input {
     margin: 10px;
@@ -38,11 +42,12 @@ article{
     background-color: white;
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 20px;
+    margin-left: 25px;
     margin-right: 20px;
     height: 165px;
     border: 1px solid purple;
     border-radius: 15px;
+    width: 448px;
 }
 article:hover{
     color: hotpink;
@@ -60,12 +65,10 @@ article:hover{
 }
 
 .tweet-container h2 {
-    /* padding-left: 50px; */
     padding-right: 10px;
-    /* padding-top: 20px; */
     padding-bottom: 10px;
     display: inline;
-    background-color: white;
+    background-color: #eee;
 }
 p {
     float: right;
@@ -90,12 +93,42 @@ p {
 }
 
 .tweet-container img {
-    padding-left: 20px;
+    margin-left: 20px;
     float: left;
     border: 1px solid #eee;
-    border-radius: 5px;
+    border-radius: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
 }
 .errors h5 {
-    /* display: none; */
     padding-left: 10px;
+}
+
+.background {
+    padding-top: 100px;
+}
+
+.far.fa-flag {
+    float: right;
+    opacity: 0;
+}
+.far.fa-flag:hover{
+    opacity: 100;
+}
+.far.fa-thumbs-up {
+    float: right;
+    padding-right: 10px;
+    opacity: 0;
+}
+.far.fa-thumbs-up:hover{
+    opacity: 100;
+}
+
+.fas.fa-retweet {
+    float: right;
+    padding-right: 10px;
+    opacity: 0;
+}
+.fas.fa-retweet:hover{
+    opacity: 100;
 }
