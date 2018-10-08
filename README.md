@@ -9,10 +9,7 @@ A simple, single page AJAX based Twitter clone that uses jQuery, HTML 5, and CSS
 
 ## Installation
 
-```
-npm install
-```
-to install necessary files
+`npm install` to install necessary files and `npm run` to host on localhost:8000
 
 ## Screenshots
 
